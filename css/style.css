@@ -2156,10 +2156,10 @@ body:has(.menu-toggle:checked) {
 
 @media (max-width: 768px) {
   .footer__top {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .footer__brand {
-    grid-column: span 1;
+  .footer__brand, .footer__office {
+    grid-column: span 2;
   }
   .footer__office {
     flex: auto;
@@ -2412,6 +2412,7 @@ body:has(.menu-toggle:checked) {
     padding: 16px 20px 16px 24px;
   }
 }
+
 
 
 
