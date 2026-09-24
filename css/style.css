@@ -1492,7 +1492,12 @@ body:has(.menu-toggle:checked) {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover, .project-card__bg {
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.project-card__bg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -2407,6 +2412,7 @@ body:has(.menu-toggle:checked) {
     padding: 16px 20px 16px 24px;
   }
 }
+
 
 
 
